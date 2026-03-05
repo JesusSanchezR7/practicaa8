@@ -1,3 +1,5 @@
+#Acciones para testear y construir  
+#Se ejecuta cada vez que se hace un push a la rama main.
 name: Test and Build v2
 
 on:
@@ -43,4 +45,7 @@ jobs:
               uses: docker/build-push-action@v6
               with:
                 push: true
-                tags: ghcr.io/jesussanchezr7/practicaa8:latest
+                tags: ghcr.io/jesussanchezr7/practica8-:latest
+                    # ghcr.io/cuenta_usuario/nombre_repositorio:tag 
+                    # la etiqueta "latest" se refiere a la última versión de la imagen.
+                    # Puedes usar otras etiquetas para versiones específicas.
